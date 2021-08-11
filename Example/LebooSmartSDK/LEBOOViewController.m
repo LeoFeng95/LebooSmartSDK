@@ -7,7 +7,7 @@
 //
 
 #import "LEBOOViewController.h"
-
+#import <LebooSmartSDK.h>
 @interface LEBOOViewController ()
 
 @end
@@ -17,6 +17,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    [LebooSmartSDK shareSDK].connectManager;
 	// Do any additional setup after loading the view, typically from a nib.
 }
 

@@ -15,9 +15,9 @@ FOUNDATION_EXPORT double LebooSDKVersionNumber;
 FOUNDATION_EXPORT const unsigned char LebooSDKVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <LebooSDK/PublicHeader.h>
-#import <LebooSDK/LebooSmartSDK.h>
-#import <LebooSDK/LebooConnectManager.h>
-#import <LebooSDK/LebooInstructManager.h>
-#import <LebooSDK/LebooUpgradeManager.h>
-#import <LebooSDK/LebooEnums.h>
+#import "LebooSDK/LebooSmartSDK.h"
+#import "LebooSDK/LebooConnectManager.h"
+#import "LebooSDK/LebooInstructManager.h"
+#import "LebooSDK/LebooUpgradeManager.h"
+#import "LebooSDK/LebooEnums.h"
 
