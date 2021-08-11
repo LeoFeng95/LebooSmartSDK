@@ -1,0 +1,1368 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		028DBF15B28DF38232A764D2C50AADDC /* iOSDFULibrary-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 229F2513D436CB473E4BAA5867D3C5B9 /* iOSDFULibrary-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		03A0E00BECEE99680AF1AACACDE9CFE3 /* ZipArchive.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F0699121352934F4D637F89D2F585AC /* ZipArchive.swift */; };
+		09C08FDD94E5ADC8263A524247651F1B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1D901AA780D482D47459D2C3828C658 /* Foundation.framework */; };
+		1175EC92B07CD43F76DAA4E47D8A5BD0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1D901AA780D482D47459D2C3828C658 /* Foundation.framework */; };
+		1959BC6ED6580F889436CD769EB49AB7 /* SecureDFUServiceInitiator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA0BC0609967451544E523B752E1AD4 /* SecureDFUServiceInitiator.swift */; };
+		1D582E970522643F5303DF13638BC69B /* DFUServiceDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CAE3ABA0A236B23E57FF3F1D6E019A6 /* DFUServiceDelegate.swift */; };
+		1E7553CD3A6F38A4BCB6A5DE36FB2E1F /* DFUServiceSelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = B58F38E64DC902DD07B7EE1CD83FF87C /* DFUServiceSelector.swift */; };
+		282B2A3BC48FFAB800EE5CFFBA61E8D2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1D901AA780D482D47459D2C3828C658 /* Foundation.framework */; };
+		2FACA228E9DEA3AFBEA412966D5FD9F5 /* Pods-LebooSmartSDK_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EFEF4D03F1B90C07562BF5FA8274CB9A /* Pods-LebooSmartSDK_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		30C0E220EDBAB63E4726CEF54C18AC12 /* IntelHex2BinConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1914026D2D71F8C337303902BA5CDFD6 /* IntelHex2BinConverter.swift */; };
+		35F0EAC5F2A8877A93EBC3C09E07BF33 /* LoggerHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C9B885B09CDDB637AD6C17C08990D94 /* LoggerHelper.swift */; };
+		3673EE018255A553230E0F6E97FE6158 /* LebooSmartSDK-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AB71D6E2BAEB477460C7AE27E5D4862D /* LebooSmartSDK-dummy.m */; };
+		3CB1EB4DA1ABDBC666D2A5470EDE3B37 /* DFUController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D504B72E4BD6058032055919EFB1C1C /* DFUController.swift */; };
+		3DE2DEDAAAB43399BD6472AE97CE4551 /* Archive.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13F44E8B15EEBA878BB0F08BF56DC502 /* Archive.swift */; };
+		40B8AEED2B2E12C5DC758554639A5A20 /* Archive+MemoryFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0161779F3F2D4011783C4306248DB4 /* Archive+MemoryFile.swift */; };
+		45AE5D5BF8F9EFABA0EF43391D909B46 /* iOSDFULibrary-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B4F207BB79D9824CD810B7B9CA8F9C6 /* iOSDFULibrary-dummy.m */; };
+		4B13A1A3AA68450DA9C8C2CA77C7FD4C /* DFUFirmware.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C50E35C36763AE6FFE429012C909161 /* DFUFirmware.swift */; };
+		4C97C85D656D97F6527435A0423B9D83 /* DFUControlPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 511C43A0D99E57A0EC3FBEFEF8860C9B /* DFUControlPoint.swift */; };
+		51EC7E8DD0C424BBC93FCE2253BB02C1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1D901AA780D482D47459D2C3828C658 /* Foundation.framework */; };
+		52153C7CD5461F1FFAD3A4E88CFB0B1A /* Data+Compression.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796DB5DB9A54612B77EB70C0E65B5695 /* Data+Compression.swift */; };
+		57E9E5D6F5E88FE089B1CC1E31AE327A /* DFUUuidHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53421C0715B11FB93AFFA9415A15ABDF /* DFUUuidHelper.swift */; };
+		584FF35B36C2197F758C31AC429D44A3 /* SecureDFUPeripheralDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57F7FFFB65D2CFC2481DC51D679F060C /* SecureDFUPeripheralDelegate.swift */; };
+		5A63909A5FEF158E3F22AA89946FE837 /* DFUServiceInitiator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D61726DC942D1A4F1F530A5AE5F699C0 /* DFUServiceInitiator.swift */; };
+		5CE4342B6C73053AB2589A40A4400AA9 /* DFUPeripheral.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A116DB1FC641824B57E6AFFA138DB8B /* DFUPeripheral.swift */; };
+		5F80E6BA2F5B4BCA0EE31159D9830CE6 /* Double.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7BF3BC88DCBD26F564895846789F05E /* Double.swift */; };
+		60A7035999E33A401ED70E1895AF014F /* SoftdeviceBootloaderInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9826CC3AAE02A0A1F4D5C665874FD6 /* SoftdeviceBootloaderInfo.swift */; };
+		62D3BC9AA11587840B7E77123D3CFCD6 /* DFUVersion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20EF8D632629983121175CCF6BD4C1AD /* DFUVersion.swift */; };
+		64CEE1C5702CA1AD82239C0719A2E536 /* DFUExecutor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BA2F0B82FDA4CB08466BC6F29F77DB /* DFUExecutor.swift */; };
+		656CE4A9498A775D04E9F0D10BB1967C /* ReplaceMe.m in Sources */ = {isa = PBXBuildFile; fileRef = 920CCBF89C6D90647DE1B9446095B721 /* ReplaceMe.m */; };
+		67B645EC54DD1A23B7C9D0F045584CAC /* DFUStream.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98EF6D25F3360212EA5688FC0FB22DD9 /* DFUStream.swift */; };
+		68489FA4F5E92F1DEB54F7BD254A0210 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1D901AA780D482D47459D2C3828C658 /* Foundation.framework */; };
+		6C18E75620218AB0CC01FBDF6F5BC905 /* Archive+Reading.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A0DCF07B55C71344CF60B9B7A5FEA06 /* Archive+Reading.swift */; };
+		6C44BFDC77143E167EA29419DD90B72F /* Pods-LebooSmartSDK_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9274CE6C735C5F61FFAEEDDDE91E1087 /* Pods-LebooSmartSDK_Example-dummy.m */; };
+		6D43001EAB42CBB04E78AD112DC64D1E /* DFUStarterPeripheral.swift in Sources */ = {isa = PBXBuildFile; fileRef = 468B089FB65D2B52B0F43EAE7A31458E /* DFUStarterPeripheral.swift */; };
+		6E4DA7A5AFC4C02C5F0132A885A6E5A3 /* DFUStreamBin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF11A045CB15BE9B1126E0684618EF4 /* DFUStreamBin.swift */; };
+		76447E56F426A5DCE3A1F56D2F7434B6 /* DFUStreamHex.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5389247F37BA2983AFF36E459627B28 /* DFUStreamHex.swift */; };
+		82BD415AD8CC4E9F77B668976953C448 /* DFUPeripheralSelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB8F39CD689AB93F4B1C2003E352791 /* DFUPeripheralSelector.swift */; };
+		8E576FFAB618E656BD64A60CEDA49F4F /* DFUPeripheralDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B1B5E1E622CF3A4889D94D8433EEE8B /* DFUPeripheralDelegate.swift */; };
+		8FD25A241EBF253F4CFFF77A885B794C /* LebooSmartSDK-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5176943D4EE3A82EACAE94F579E1B117 /* LebooSmartSDK-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		92D83BE44CA6ACD82DF08827DA34640F /* DFUServiceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FDCEC91680C2B6A24D018D2A5966C1 /* DFUServiceController.swift */; };
+		9BDF143CBE288A6B4B307EC8DD91835C /* ButtonlessDFU.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D2225B4C628128495A1AD323B3B1CC /* ButtonlessDFU.swift */; };
+		9D50824E00EAD610A593898FD570071A /* crc32.swift in Sources */ = {isa = PBXBuildFile; fileRef = D712BE46478804D658785B1D459997C8 /* crc32.swift */; };
+		A1D8D9F427A072B371139E5FE8E7B496 /* SecureDFUPacket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5627576F103453566BEF4FF59D9DA877 /* SecureDFUPacket.swift */; };
+		A3E9887B821C587208583139CC33D6B0 /* Pods-LebooSmartSDK_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D225543909904ACD566F949FDEE4E988 /* Pods-LebooSmartSDK_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A3EE0BD5814AC1DF1ACB7ED137B61AD9 /* LoggerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A61CFCB2584369F4D98CC0AC2F47B9 /* LoggerDelegate.swift */; };
+		A5B7F409748CEA21E2D543B3C6172253 /* Entry.swift in Sources */ = {isa = PBXBuildFile; fileRef = A645AD50213B40884C108C8803BC6B3A /* Entry.swift */; };
+		A7071CC186838C1947986E2EABDEF905 /* DFUStreamZip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C8D19DF80F0FD91FB7BB98C5DEE213A /* DFUStreamZip.swift */; };
+		B1A877DDEA7455BAF303606F479F9BA1 /* ManifestFirmwareInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1C00D43D499D0EF6B68626D1FB77389 /* ManifestFirmwareInfo.swift */; };
+		B97B4A1EDB297E527D7E96046614C287 /* ZIPFoundation-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FB21067672D4CCC11448286DB696656E /* ZIPFoundation-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BD5FCAC1CAC5F206A32F806F5E9EE256 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CDB77AEAD2CBD78B4140BA5F259AC84 /* Data.swift */; };
+		BDF8767F2632771A98948BFFF13F0E04 /* LegacyDFUPeripheral.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63F27326B53A8A1A2D1A8A124A979235 /* LegacyDFUPeripheral.swift */; };
+		C639BE3D6DB21D9736007CAAB79B8623 /* DFUPeripheralSelectorDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C4838B6ABB3A7CDFCBB7A332352B8CE /* DFUPeripheralSelectorDelegate.swift */; };
+		C73638478B40EC7B84CD3490FBD35C81 /* LegacyDFUService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C0128C874D930A8ABEE84D74F678745 /* LegacyDFUService.swift */; };
+		C811E49F78FB3960C2DFC0EC83FB1BED /* SecureDFUControlPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5B90D1D434AC2B2B3E078A0CE128F9 /* SecureDFUControlPoint.swift */; };
+		C94152095F00B8D86B77491D12B7069A /* SecureDFUService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D11DD15C302D06B1CA680D5C769BEBF /* SecureDFUService.swift */; };
+		CD8AFA73ECC5FED9B526CFCD87D6F266 /* SecureDFUPeripheral.swift in Sources */ = {isa = PBXBuildFile; fileRef = F516EA52FB78A713EFBC80B665BBB748 /* SecureDFUPeripheral.swift */; };
+		CEFF67D23A2812637BC4F0C4B67AF91B /* LegacyDFUServiceInitiator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1D27024D17DBA9A2229EAB3E23D7F2 /* LegacyDFUServiceInitiator.swift */; };
+		D1BA4CF864F8020F1C0D7C3A64FCF746 /* DFUCharacteristic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 805D4BCBC10B662FE5815B8A60E11274 /* DFUCharacteristic.swift */; };
+		D5750175FCDBFB4A23C37549B06FC00B /* ZIPFoundation-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 19CEA650611ABF946832A520504EC218 /* ZIPFoundation-dummy.m */; };
+		E3671AD4AE39FC993D6E63EB8D20484D /* Data+Serialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAAEB4849E9EDE800BC35C203C428025 /* Data+Serialization.swift */; };
+		E59ED4F333DB81E371C435DD6023C8A4 /* Manifest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44D4557635471F004FAC2CAF9848F5FF /* Manifest.swift */; };
+		EAEAEA8E1B36EEC9177BA41690057EBF /* LegacyDFUPeripheralDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0553AFF05AF83EF2D984E51F6117115C /* LegacyDFUPeripheralDelegate.swift */; };
+		EF5E0918E675308789D4BBCD5D18EB40 /* DFUPacket.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2D4F716D5F4B9A700BAE0FCE95A98E /* DFUPacket.swift */; };
+		F31151D69E7B47350103FB3A43F3F99B /* DFUService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0FD70984FDDC5125AC751D493505117 /* DFUService.swift */; };
+		F3A575D47A41C801EECA43C085F53BC6 /* SecureDFUExecutor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A045356F9054D4107DA1A00E60599ACA /* SecureDFUExecutor.swift */; };
+		F86A8CD824EB099CF06935A088F62BC5 /* FileManager+ZIP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8749DBBEAB66D4B576FADAC88CDE5967 /* FileManager+ZIP.swift */; };
+		F89B49496E5BA6C4605C4BC666AD3E4D /* Archive+Writing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D4540759C2E29E0A99BD50D491BC193 /* Archive+Writing.swift */; };
+		FA2AE46C260450F8A3141368D08CC791 /* ZIPFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5ACB827D79A4558F979CA1F5CDBD95B4 /* ZIPFoundation.framework */; };
+		FB44BF450DAC25865C21701299803650 /* Pods-LebooSmartSDK_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 65A6D2966D454E2C1556996A7E466E1E /* Pods-LebooSmartSDK_Tests-dummy.m */; };
+		FE940323C8D995D7186111FF285F6047 /* LegacyDFUExecutor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 116F7769F9A2884AA5B5F1062AF663BC /* LegacyDFUExecutor.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		367187ECB36CADA5A86AA34C1FFB5856 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AA15C8469D67684160CC2A7098EB841C;
+			remoteInfo = ZIPFoundation;
+		};
+		41E46D1E7C2DE8F0B9EF655D5D2A4A2A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0B34ACAFD9257DF6D167ABB33506FC84;
+			remoteInfo = LebooSmartSDK;
+		};
+		5FF05EF8A91B890C9DAE4316FE3C63D7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AA15C8469D67684160CC2A7098EB841C;
+			remoteInfo = ZIPFoundation;
+		};
+		642FDF31E3D0D92EF3A954CD77D0057F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 30A69432D6A2F9F7BFF453B257263062;
+			remoteInfo = "Pods-LebooSmartSDK_Example";
+		};
+		A50D6E3967CBFA3C8508A7FB56A8CE12 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9506C7FCDAE6E6967A99655F452EEE93;
+			remoteInfo = iOSDFULibrary;
+		};
+		DA7BA4BCE85A45556EC8A801176A351A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9506C7FCDAE6E6967A99655F452EEE93;
+			remoteInfo = iOSDFULibrary;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0553AFF05AF83EF2D984E51F6117115C /* LegacyDFUPeripheralDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LegacyDFUPeripheralDelegate.swift; path = iOSDFULibrary/Classes/Implementation/LegacyDFU/Peripherals/LegacyDFUPeripheralDelegate.swift; sourceTree = "<group>"; };
+		0AC11FC45B3850FBE02BC65650F011E8 /* LebooSmartSDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LebooSmartSDK.debug.xcconfig; sourceTree = "<group>"; };
+		0C0128C874D930A8ABEE84D74F678745 /* LegacyDFUService.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LegacyDFUService.swift; path = iOSDFULibrary/Classes/Implementation/LegacyDFU/Services/LegacyDFUService.swift; sourceTree = "<group>"; };
+		0CAE3ABA0A236B23E57FF3F1D6E019A6 /* DFUServiceDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DFUServiceDelegate.swift; path = iOSDFULibrary/Classes/Implementation/DFUServiceDelegate.swift; sourceTree = "<group>"; };
+		116F7769F9A2884AA5B5F1062AF663BC /* LegacyDFUExecutor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LegacyDFUExecutor.swift; path = iOSDFULibrary/Classes/Implementation/LegacyDFU/DFU/LegacyDFUExecutor.swift; sourceTree = "<group>"; };
+		13F44E8B15EEBA878BB0F08BF56DC502 /* Archive.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Archive.swift; path = Sources/ZIPFoundation/Archive.swift; sourceTree = "<group>"; };
+		17CCC5BD95FCFF264818AE2595EC53B0 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		1914026D2D71F8C337303902BA5CDFD6 /* IntelHex2BinConverter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IntelHex2BinConverter.swift; path = iOSDFULibrary/Classes/Utilities/HexToBinConverter/IntelHex2BinConverter.swift; sourceTree = "<group>"; };
+		19CEA650611ABF946832A520504EC218 /* ZIPFoundation-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ZIPFoundation-dummy.m"; sourceTree = "<group>"; };
+		1C18E37643727848F37256147E9AD151 /* iOSDFULibrary.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = iOSDFULibrary.debug.xcconfig; sourceTree = "<group>"; };
+		1C4E5064B135FEFEF0BCAC673EAB4272 /* Pods-LebooSmartSDK_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-LebooSmartSDK_Tests.modulemap"; sourceTree = "<group>"; };
+		2055BCC3EE7007EC7D9A32BC2F46D5A0 /* iOSDFULibrary-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "iOSDFULibrary-prefix.pch"; sourceTree = "<group>"; };
+		20EF8D632629983121175CCF6BD4C1AD /* DFUVersion.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DFUVersion.swift; path = iOSDFULibrary/Classes/Implementation/LegacyDFU/Characteristics/DFUVersion.swift; sourceTree = "<group>"; };
+		21B1375088A0310C7AE2BE4C8188D12F /* iOSDFULibrary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = iOSDFULibrary.framework; path = iOSDFULibrary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		21D95460412CBDDED6750AADBB2880FB /* LebooSmartSDK.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = LebooSmartSDK.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		229F2513D436CB473E4BAA5867D3C5B9 /* iOSDFULibrary-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "iOSDFULibrary-umbrella.h"; sourceTree = "<group>"; };
+		273E70460A6D98B2B701F2865556CB13 /* iOSDFULibrary.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = iOSDFULibrary.release.xcconfig; sourceTree = "<group>"; };
+		2A7F904AB9C8B1A71904D10D8F1A6151 /* ZIPFoundation.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ZIPFoundation.debug.xcconfig; sourceTree = "<group>"; };
+		2C27430995B4B5AB4D0656BBC64B4DE3 /* Pods-LebooSmartSDK_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-LebooSmartSDK_Example.modulemap"; sourceTree = "<group>"; };
+		2C50E35C36763AE6FFE429012C909161 /* DFUFirmware.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DFUFirmware.swift; path = iOSDFULibrary/Classes/Implementation/Firmware/DFUFirmware.swift; sourceTree = "<group>"; };
+		30D2225B4C628128495A1AD323B3B1CC /* ButtonlessDFU.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ButtonlessDFU.swift; path = iOSDFULibrary/Classes/Implementation/SecureDFU/Characteristics/ButtonlessDFU.swift; sourceTree = "<group>"; };
+		3B1B5E1E622CF3A4889D94D8433EEE8B /* DFUPeripheralDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DFUPeripheralDelegate.swift; path = iOSDFULibrary/Classes/Implementation/GenericDFU/DFUPeripheralDelegate.swift; sourceTree = "<group>"; };
+		3B4F207BB79D9824CD810B7B9CA8F9C6 /* iOSDFULibrary-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "iOSDFULibrary-dummy.m"; sourceTree = "<group>"; };
+		3CA0BC0609967451544E523B752E1AD4 /* SecureDFUServiceInitiator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SecureDFUServiceInitiator.swift; path = iOSDFULibrary/Classes/Implementation/SecureDFU/DFU/SecureDFUServiceInitiator.swift; sourceTree = "<group>"; };
+		3DF470F462A433B5035DD2E16C08638C /* ZIPFoundation-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ZIPFoundation-Info.plist"; sourceTree = "<group>"; };
+		3FD807C659EB516E9B032C51CCB992BE /* Pods-LebooSmartSDK_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LebooSmartSDK_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		44A255AE5F46CF90A391F8045DE6537B /* ZIPFoundation-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ZIPFoundation-prefix.pch"; sourceTree = "<group>"; };
+		44D4557635471F004FAC2CAF9848F5FF /* Manifest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Manifest.swift; path = iOSDFULibrary/Classes/Utilities/DFUPackage/Manifest/Manifest.swift; sourceTree = "<group>"; };
+		468B089FB65D2B52B0F43EAE7A31458E /* DFUStarterPeripheral.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DFUStarterPeripheral.swift; path = iOSDFULibrary/Classes/Implementation/DFUSelector/DFUStarterPeripheral.swift; sourceTree = "<group>"; };
+		48A4A6EDC08C8AC933D0DCD507E9D173 /* ZIPFoundation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ZIPFoundation.framework; path = ZIPFoundation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A116DB1FC641824B57E6AFFA138DB8B /* DFUPeripheral.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DFUPeripheral.swift; path = iOSDFULibrary/Classes/Implementation/GenericDFU/DFUPeripheral.swift; sourceTree = "<group>"; };
+		4B9D96E276653E8FDF8E5DEB02C8C605 /* Pods-LebooSmartSDK_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LebooSmartSDK_Example.release.xcconfig"; sourceTree = "<group>"; };
+		4CFF021F902926892285EFAA2CBC2EB7 /* LebooSmartSDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LebooSmartSDK.release.xcconfig; sourceTree = "<group>"; };
+		4D504B72E4BD6058032055919EFB1C1C /* DFUController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DFUController.swift; path = iOSDFULibrary/Classes/Implementation/GenericDFU/DFUController.swift; sourceTree = "<group>"; };
+		4EF11A045CB15BE9B1126E0684618EF4 /* DFUStreamBin.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DFUStreamBin.swift; path = iOSDFULibrary/Classes/Utilities/Streams/DFUStreamBin.swift; sourceTree = "<group>"; };
+		511C43A0D99E57A0EC3FBEFEF8860C9B /* DFUControlPoint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DFUControlPoint.swift; path = iOSDFULibrary/Classes/Implementation/LegacyDFU/Characteristics/DFUControlPoint.swift; sourceTree = "<group>"; };
+		5176943D4EE3A82EACAE94F579E1B117 /* LebooSmartSDK-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LebooSmartSDK-umbrella.h"; sourceTree = "<group>"; };
+		53421C0715B11FB93AFFA9415A15ABDF /* DFUUuidHelper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DFUUuidHelper.swift; path = iOSDFULibrary/Classes/Implementation/DFUUuidHelper.swift; sourceTree = "<group>"; };
+		5627576F103453566BEF4FF59D9DA877 /* SecureDFUPacket.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SecureDFUPacket.swift; path = iOSDFULibrary/Classes/Implementation/SecureDFU/Characteristics/SecureDFUPacket.swift; sourceTree = "<group>"; };
+		56A61CFCB2584369F4D98CC0AC2F47B9 /* LoggerDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LoggerDelegate.swift; path = iOSDFULibrary/Classes/Utilities/Logging/LoggerDelegate.swift; sourceTree = "<group>"; };
+		57F7FFFB65D2CFC2481DC51D679F060C /* SecureDFUPeripheralDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SecureDFUPeripheralDelegate.swift; path = iOSDFULibrary/Classes/Implementation/SecureDFU/Peripheral/SecureDFUPeripheralDelegate.swift; sourceTree = "<group>"; };
+		5A0DCF07B55C71344CF60B9B7A5FEA06 /* Archive+Reading.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Archive+Reading.swift"; path = "Sources/ZIPFoundation/Archive+Reading.swift"; sourceTree = "<group>"; };
+		5ACB827D79A4558F979CA1F5CDBD95B4 /* ZIPFoundation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ZIPFoundation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C9B885B09CDDB637AD6C17C08990D94 /* LoggerHelper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LoggerHelper.swift; path = iOSDFULibrary/Classes/Utilities/Logging/LoggerHelper.swift; sourceTree = "<group>"; };
+		5CDB77AEAD2CBD78B4140BA5F259AC84 /* Data.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Data.swift; path = iOSDFULibrary/Classes/Utilities/Data.swift; sourceTree = "<group>"; };
+		5D11DD15C302D06B1CA680D5C769BEBF /* SecureDFUService.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SecureDFUService.swift; path = iOSDFULibrary/Classes/Implementation/SecureDFU/Services/SecureDFUService.swift; sourceTree = "<group>"; };
+		63F27326B53A8A1A2D1A8A124A979235 /* LegacyDFUPeripheral.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LegacyDFUPeripheral.swift; path = iOSDFULibrary/Classes/Implementation/LegacyDFU/Peripherals/LegacyDFUPeripheral.swift; sourceTree = "<group>"; };
+		65A6D2966D454E2C1556996A7E466E1E /* Pods-LebooSmartSDK_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LebooSmartSDK_Tests-dummy.m"; sourceTree = "<group>"; };
+		6C4838B6ABB3A7CDFCBB7A332352B8CE /* DFUPeripheralSelectorDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DFUPeripheralSelectorDelegate.swift; path = iOSDFULibrary/Classes/Implementation/DFUPeripheralSelectorDelegate.swift; sourceTree = "<group>"; };
+		6D4540759C2E29E0A99BD50D491BC193 /* Archive+Writing.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Archive+Writing.swift"; path = "Sources/ZIPFoundation/Archive+Writing.swift"; sourceTree = "<group>"; };
+		796DB5DB9A54612B77EB70C0E65B5695 /* Data+Compression.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Data+Compression.swift"; path = "Sources/ZIPFoundation/Data+Compression.swift"; sourceTree = "<group>"; };
+		7C7B1C30CD437D9771584476E2083B63 /* Pods_LebooSmartSDK_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_LebooSmartSDK_Example.framework; path = "Pods-LebooSmartSDK_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		805D4BCBC10B662FE5815B8A60E11274 /* DFUCharacteristic.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DFUCharacteristic.swift; path = iOSDFULibrary/Classes/Implementation/GenericDFU/DFUCharacteristic.swift; sourceTree = "<group>"; };
+		84BA2F0B82FDA4CB08466BC6F29F77DB /* DFUExecutor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DFUExecutor.swift; path = iOSDFULibrary/Classes/Implementation/GenericDFU/DFUExecutor.swift; sourceTree = "<group>"; };
+		8749DBBEAB66D4B576FADAC88CDE5967 /* FileManager+ZIP.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "FileManager+ZIP.swift"; path = "Sources/ZIPFoundation/FileManager+ZIP.swift"; sourceTree = "<group>"; };
+		8EA3835FF6BD9ED1C9959945A5238B06 /* LebooSmartSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = LebooSmartSDK.framework; path = LebooSmartSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F0699121352934F4D637F89D2F585AC /* ZipArchive.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ZipArchive.swift; path = iOSDFULibrary/Classes/Utilities/ZipArchive.swift; sourceTree = "<group>"; };
+		920CCBF89C6D90647DE1B9446095B721 /* ReplaceMe.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ReplaceMe.m; path = LebooSmartSDK/Classes/ReplaceMe.m; sourceTree = "<group>"; };
+		9274CE6C735C5F61FFAEEDDDE91E1087 /* Pods-LebooSmartSDK_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LebooSmartSDK_Example-dummy.m"; sourceTree = "<group>"; };
+		9584A23DF441F79EA4C765753AD77C3F /* LebooSmartSDK.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = LebooSmartSDK.modulemap; sourceTree = "<group>"; };
+		95EF5FE72113E841518EACFA40D8D9EC /* Pods-LebooSmartSDK_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LebooSmartSDK_Example-frameworks.sh"; sourceTree = "<group>"; };
+		98EF6D25F3360212EA5688FC0FB22DD9 /* DFUStream.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DFUStream.swift; path = iOSDFULibrary/Classes/Utilities/Streams/DFUStream.swift; sourceTree = "<group>"; };
+		9A56BDCDDF6ACF3BED4F39BAD4A4F187 /* Pods-LebooSmartSDK_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LebooSmartSDK_Tests-Info.plist"; sourceTree = "<group>"; };
+		9B54B23EB18D14B2D7A9161AED8CFD93 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		9C8D19DF80F0FD91FB7BB98C5DEE213A /* DFUStreamZip.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DFUStreamZip.swift; path = iOSDFULibrary/Classes/Utilities/Streams/DFUStreamZip.swift; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9DB8F39CD689AB93F4B1C2003E352791 /* DFUPeripheralSelector.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DFUPeripheralSelector.swift; path = iOSDFULibrary/Classes/Implementation/DFUPeripheralSelector.swift; sourceTree = "<group>"; };
+		A045356F9054D4107DA1A00E60599ACA /* SecureDFUExecutor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SecureDFUExecutor.swift; path = iOSDFULibrary/Classes/Implementation/SecureDFU/DFU/SecureDFUExecutor.swift; sourceTree = "<group>"; };
+		A645AD50213B40884C108C8803BC6B3A /* Entry.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Entry.swift; path = Sources/ZIPFoundation/Entry.swift; sourceTree = "<group>"; };
+		A7BF3BC88DCBD26F564895846789F05E /* Double.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Double.swift; path = iOSDFULibrary/Classes/Utilities/Double.swift; sourceTree = "<group>"; };
+		AAAEB4849E9EDE800BC35C203C428025 /* Data+Serialization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Data+Serialization.swift"; path = "Sources/ZIPFoundation/Data+Serialization.swift"; sourceTree = "<group>"; };
+		AB71D6E2BAEB477460C7AE27E5D4862D /* LebooSmartSDK-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LebooSmartSDK-dummy.m"; sourceTree = "<group>"; };
+		AC9B1723CB4B1A5EC3C1AB0DDAA48E17 /* Pods-LebooSmartSDK_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LebooSmartSDK_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		ACBC6FB2F127684D109F966D4CF96406 /* Pods-LebooSmartSDK_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LebooSmartSDK_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		AE7DA00F16B3582CCD0CB87A1A0CE1FB /* Pods-LebooSmartSDK_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LebooSmartSDK_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		AFC1C50F433B2FA9A5D5C86B9A6A0EE8 /* ZIPFoundation.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ZIPFoundation.release.xcconfig; sourceTree = "<group>"; };
+		B1C00D43D499D0EF6B68626D1FB77389 /* ManifestFirmwareInfo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ManifestFirmwareInfo.swift; path = iOSDFULibrary/Classes/Utilities/DFUPackage/Manifest/ManifestFirmwareInfo.swift; sourceTree = "<group>"; };
+		B258702801EB1D00C878B717CB63EC29 /* iOSDFULibrary-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "iOSDFULibrary-Info.plist"; sourceTree = "<group>"; };
+		B39B3B5C6CF62FA65911A6CC43501580 /* ZIPFoundation.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ZIPFoundation.modulemap; sourceTree = "<group>"; };
+		B58F38E64DC902DD07B7EE1CD83FF87C /* DFUServiceSelector.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DFUServiceSelector.swift; path = iOSDFULibrary/Classes/Implementation/DFUSelector/DFUServiceSelector.swift; sourceTree = "<group>"; };
+		BDA4100E3C192DE6EA8D46A068B562A0 /* LebooSmartSDK-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LebooSmartSDK-prefix.pch"; sourceTree = "<group>"; };
+		C07BA9F28F9BAA25CE70397CB249D5C4 /* Pods-LebooSmartSDK_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LebooSmartSDK_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		C0FD70984FDDC5125AC751D493505117 /* DFUService.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DFUService.swift; path = iOSDFULibrary/Classes/Implementation/GenericDFU/DFUService.swift; sourceTree = "<group>"; };
+		C1D901AA780D482D47459D2C3828C658 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		C2CB8218D4227E2CC67C073BAB2293E2 /* Pods-LebooSmartSDK_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LebooSmartSDK_Example-Info.plist"; sourceTree = "<group>"; };
+		C46E5A85D0A19EE185221844A545FA54 /* Pods_LebooSmartSDK_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_LebooSmartSDK_Tests.framework; path = "Pods-LebooSmartSDK_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB0161779F3F2D4011783C4306248DB4 /* Archive+MemoryFile.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Archive+MemoryFile.swift"; path = "Sources/ZIPFoundation/Archive+MemoryFile.swift"; sourceTree = "<group>"; };
+		CB856913A4F6DDF01271ACDC663B48CD /* Pods-LebooSmartSDK_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LebooSmartSDK_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		CB9826CC3AAE02A0A1F4D5C665874FD6 /* SoftdeviceBootloaderInfo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SoftdeviceBootloaderInfo.swift; path = iOSDFULibrary/Classes/Utilities/DFUPackage/Manifest/SoftdeviceBootloaderInfo.swift; sourceTree = "<group>"; };
+		CBF47CEBF8310D87877F897CAFAC6C23 /* LebooSmartSDK-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "LebooSmartSDK-Info.plist"; sourceTree = "<group>"; };
+		CF1D27024D17DBA9A2229EAB3E23D7F2 /* LegacyDFUServiceInitiator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LegacyDFUServiceInitiator.swift; path = iOSDFULibrary/Classes/Implementation/LegacyDFU/DFU/LegacyDFUServiceInitiator.swift; sourceTree = "<group>"; };
+		D225543909904ACD566F949FDEE4E988 /* Pods-LebooSmartSDK_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LebooSmartSDK_Example-umbrella.h"; sourceTree = "<group>"; };
+		D5389247F37BA2983AFF36E459627B28 /* DFUStreamHex.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DFUStreamHex.swift; path = iOSDFULibrary/Classes/Utilities/Streams/DFUStreamHex.swift; sourceTree = "<group>"; };
+		D58F5D3FD5694F42A8A554FC35EF28EE /* iOSDFULibrary.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = iOSDFULibrary.modulemap; sourceTree = "<group>"; };
+		D61726DC942D1A4F1F530A5AE5F699C0 /* DFUServiceInitiator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DFUServiceInitiator.swift; path = iOSDFULibrary/Classes/Implementation/DFUServiceInitiator.swift; sourceTree = "<group>"; };
+		D712BE46478804D658785B1D459997C8 /* crc32.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = crc32.swift; path = iOSDFULibrary/Classes/Utilities/crc32.swift; sourceTree = "<group>"; };
+		D9BE03A8C426E5F0AB15594235413703 /* Pods-LebooSmartSDK_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LebooSmartSDK_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		DD5B90D1D434AC2B2B3E078A0CE128F9 /* SecureDFUControlPoint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SecureDFUControlPoint.swift; path = iOSDFULibrary/Classes/Implementation/SecureDFU/Characteristics/SecureDFUControlPoint.swift; sourceTree = "<group>"; };
+		EB2D4F716D5F4B9A700BAE0FCE95A98E /* DFUPacket.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DFUPacket.swift; path = iOSDFULibrary/Classes/Implementation/LegacyDFU/Characteristics/DFUPacket.swift; sourceTree = "<group>"; };
+		EFEF4D03F1B90C07562BF5FA8274CB9A /* Pods-LebooSmartSDK_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LebooSmartSDK_Tests-umbrella.h"; sourceTree = "<group>"; };
+		F3FDCEC91680C2B6A24D018D2A5966C1 /* DFUServiceController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DFUServiceController.swift; path = iOSDFULibrary/Classes/Implementation/DFUServiceController.swift; sourceTree = "<group>"; };
+		F516EA52FB78A713EFBC80B665BBB748 /* SecureDFUPeripheral.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SecureDFUPeripheral.swift; path = iOSDFULibrary/Classes/Implementation/SecureDFU/Peripheral/SecureDFUPeripheral.swift; sourceTree = "<group>"; };
+		FB21067672D4CCC11448286DB696656E /* ZIPFoundation-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ZIPFoundation-umbrella.h"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0FA5895136F4B505235FAC3FE53BE1D4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				282B2A3BC48FFAB800EE5CFFBA61E8D2 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F643EA63282B193D283F4A6490E1B42 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1175EC92B07CD43F76DAA4E47D8A5BD0 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		71245F74FC92DF3982E2DB39C85A01E3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				51EC7E8DD0C424BBC93FCE2253BB02C1 /* Foundation.framework in Frameworks */,
+				FA2AE46C260450F8A3141368D08CC791 /* ZIPFoundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C781FC8B3702F1A482A9211A9709FB27 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09C08FDD94E5ADC8263A524247651F1B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC10029A89AEA29D8597513A135CF6D8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68489FA4F5E92F1DEB54F7BD254A0210 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0C004C0CFA9D7E9EEA1E72C3033996C8 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				9584A23DF441F79EA4C765753AD77C3F /* LebooSmartSDK.modulemap */,
+				AB71D6E2BAEB477460C7AE27E5D4862D /* LebooSmartSDK-dummy.m */,
+				CBF47CEBF8310D87877F897CAFAC6C23 /* LebooSmartSDK-Info.plist */,
+				BDA4100E3C192DE6EA8D46A068B562A0 /* LebooSmartSDK-prefix.pch */,
+				5176943D4EE3A82EACAE94F579E1B117 /* LebooSmartSDK-umbrella.h */,
+				0AC11FC45B3850FBE02BC65650F011E8 /* LebooSmartSDK.debug.xcconfig */,
+				4CFF021F902926892285EFAA2CBC2EB7 /* LebooSmartSDK.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/LebooSmartSDK";
+			sourceTree = "<group>";
+		};
+		0FBDEF70C818F1D4C9333AD1346A283D /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				D58F5D3FD5694F42A8A554FC35EF28EE /* iOSDFULibrary.modulemap */,
+				3B4F207BB79D9824CD810B7B9CA8F9C6 /* iOSDFULibrary-dummy.m */,
+				B258702801EB1D00C878B717CB63EC29 /* iOSDFULibrary-Info.plist */,
+				2055BCC3EE7007EC7D9A32BC2F46D5A0 /* iOSDFULibrary-prefix.pch */,
+				229F2513D436CB473E4BAA5867D3C5B9 /* iOSDFULibrary-umbrella.h */,
+				1C18E37643727848F37256147E9AD151 /* iOSDFULibrary.debug.xcconfig */,
+				273E70460A6D98B2B701F2865556CB13 /* iOSDFULibrary.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/iOSDFULibrary";
+			sourceTree = "<group>";
+		};
+		2C010ECA9C6A25A358EAD6567745F671 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B39B3B5C6CF62FA65911A6CC43501580 /* ZIPFoundation.modulemap */,
+				19CEA650611ABF946832A520504EC218 /* ZIPFoundation-dummy.m */,
+				3DF470F462A433B5035DD2E16C08638C /* ZIPFoundation-Info.plist */,
+				44A255AE5F46CF90A391F8045DE6537B /* ZIPFoundation-prefix.pch */,
+				FB21067672D4CCC11448286DB696656E /* ZIPFoundation-umbrella.h */,
+				2A7F904AB9C8B1A71904D10D8F1A6151 /* ZIPFoundation.debug.xcconfig */,
+				AFC1C50F433B2FA9A5D5C86B9A6A0EE8 /* ZIPFoundation.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/ZIPFoundation";
+			sourceTree = "<group>";
+		};
+		3D80A1D8259BB2395E9840F57AFE7F74 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				C1D901AA780D482D47459D2C3828C658 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		3E1A7B577EA89F3FA49611499DC43A73 /* LebooSmartSDK */ = {
+			isa = PBXGroup;
+			children = (
+				920CCBF89C6D90647DE1B9446095B721 /* ReplaceMe.m */,
+				81D698B93B26F61A0A3374FC45020FA8 /* Pod */,
+				0C004C0CFA9D7E9EEA1E72C3033996C8 /* Support Files */,
+			);
+			name = LebooSmartSDK;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		499235AEC1A6C699F1E9F804EE867D8D /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				7F8AEC2100E4BDB863543AD80B467969 /* Pods-LebooSmartSDK_Example */,
+				5C022FF5E2A004F55C0BB94E1AAC9F98 /* Pods-LebooSmartSDK_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		4D2C317CDF1358FACFD3573E196A71C8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5ACB827D79A4558F979CA1F5CDBD95B4 /* ZIPFoundation.framework */,
+				3D80A1D8259BB2395E9840F57AFE7F74 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		59E738FC7D63EC9A76576C71648BC3FB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				77C75B9FC42B7CBE05C6CDA1C31A8E7A /* iOSDFULibrary */,
+				ECDEC86CE3A4D2869075DAE77BD95A5B /* ZIPFoundation */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		5C022FF5E2A004F55C0BB94E1AAC9F98 /* Pods-LebooSmartSDK_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				1C4E5064B135FEFEF0BCAC673EAB4272 /* Pods-LebooSmartSDK_Tests.modulemap */,
+				3FD807C659EB516E9B032C51CCB992BE /* Pods-LebooSmartSDK_Tests-acknowledgements.markdown */,
+				AE7DA00F16B3582CCD0CB87A1A0CE1FB /* Pods-LebooSmartSDK_Tests-acknowledgements.plist */,
+				65A6D2966D454E2C1556996A7E466E1E /* Pods-LebooSmartSDK_Tests-dummy.m */,
+				9A56BDCDDF6ACF3BED4F39BAD4A4F187 /* Pods-LebooSmartSDK_Tests-Info.plist */,
+				EFEF4D03F1B90C07562BF5FA8274CB9A /* Pods-LebooSmartSDK_Tests-umbrella.h */,
+				ACBC6FB2F127684D109F966D4CF96406 /* Pods-LebooSmartSDK_Tests.debug.xcconfig */,
+				D9BE03A8C426E5F0AB15594235413703 /* Pods-LebooSmartSDK_Tests.release.xcconfig */,
+			);
+			name = "Pods-LebooSmartSDK_Tests";
+			path = "Target Support Files/Pods-LebooSmartSDK_Tests";
+			sourceTree = "<group>";
+		};
+		77C75B9FC42B7CBE05C6CDA1C31A8E7A /* iOSDFULibrary */ = {
+			isa = PBXGroup;
+			children = (
+				30D2225B4C628128495A1AD323B3B1CC /* ButtonlessDFU.swift */,
+				D712BE46478804D658785B1D459997C8 /* crc32.swift */,
+				5CDB77AEAD2CBD78B4140BA5F259AC84 /* Data.swift */,
+				805D4BCBC10B662FE5815B8A60E11274 /* DFUCharacteristic.swift */,
+				4D504B72E4BD6058032055919EFB1C1C /* DFUController.swift */,
+				511C43A0D99E57A0EC3FBEFEF8860C9B /* DFUControlPoint.swift */,
+				84BA2F0B82FDA4CB08466BC6F29F77DB /* DFUExecutor.swift */,
+				2C50E35C36763AE6FFE429012C909161 /* DFUFirmware.swift */,
+				EB2D4F716D5F4B9A700BAE0FCE95A98E /* DFUPacket.swift */,
+				4A116DB1FC641824B57E6AFFA138DB8B /* DFUPeripheral.swift */,
+				3B1B5E1E622CF3A4889D94D8433EEE8B /* DFUPeripheralDelegate.swift */,
+				9DB8F39CD689AB93F4B1C2003E352791 /* DFUPeripheralSelector.swift */,
+				6C4838B6ABB3A7CDFCBB7A332352B8CE /* DFUPeripheralSelectorDelegate.swift */,
+				C0FD70984FDDC5125AC751D493505117 /* DFUService.swift */,
+				F3FDCEC91680C2B6A24D018D2A5966C1 /* DFUServiceController.swift */,
+				0CAE3ABA0A236B23E57FF3F1D6E019A6 /* DFUServiceDelegate.swift */,
+				D61726DC942D1A4F1F530A5AE5F699C0 /* DFUServiceInitiator.swift */,
+				B58F38E64DC902DD07B7EE1CD83FF87C /* DFUServiceSelector.swift */,
+				468B089FB65D2B52B0F43EAE7A31458E /* DFUStarterPeripheral.swift */,
+				98EF6D25F3360212EA5688FC0FB22DD9 /* DFUStream.swift */,
+				4EF11A045CB15BE9B1126E0684618EF4 /* DFUStreamBin.swift */,
+				D5389247F37BA2983AFF36E459627B28 /* DFUStreamHex.swift */,
+				9C8D19DF80F0FD91FB7BB98C5DEE213A /* DFUStreamZip.swift */,
+				53421C0715B11FB93AFFA9415A15ABDF /* DFUUuidHelper.swift */,
+				20EF8D632629983121175CCF6BD4C1AD /* DFUVersion.swift */,
+				A7BF3BC88DCBD26F564895846789F05E /* Double.swift */,
+				1914026D2D71F8C337303902BA5CDFD6 /* IntelHex2BinConverter.swift */,
+				116F7769F9A2884AA5B5F1062AF663BC /* LegacyDFUExecutor.swift */,
+				63F27326B53A8A1A2D1A8A124A979235 /* LegacyDFUPeripheral.swift */,
+				0553AFF05AF83EF2D984E51F6117115C /* LegacyDFUPeripheralDelegate.swift */,
+				0C0128C874D930A8ABEE84D74F678745 /* LegacyDFUService.swift */,
+				CF1D27024D17DBA9A2229EAB3E23D7F2 /* LegacyDFUServiceInitiator.swift */,
+				56A61CFCB2584369F4D98CC0AC2F47B9 /* LoggerDelegate.swift */,
+				5C9B885B09CDDB637AD6C17C08990D94 /* LoggerHelper.swift */,
+				44D4557635471F004FAC2CAF9848F5FF /* Manifest.swift */,
+				B1C00D43D499D0EF6B68626D1FB77389 /* ManifestFirmwareInfo.swift */,
+				DD5B90D1D434AC2B2B3E078A0CE128F9 /* SecureDFUControlPoint.swift */,
+				A045356F9054D4107DA1A00E60599ACA /* SecureDFUExecutor.swift */,
+				5627576F103453566BEF4FF59D9DA877 /* SecureDFUPacket.swift */,
+				F516EA52FB78A713EFBC80B665BBB748 /* SecureDFUPeripheral.swift */,
+				57F7FFFB65D2CFC2481DC51D679F060C /* SecureDFUPeripheralDelegate.swift */,
+				5D11DD15C302D06B1CA680D5C769BEBF /* SecureDFUService.swift */,
+				3CA0BC0609967451544E523B752E1AD4 /* SecureDFUServiceInitiator.swift */,
+				CB9826CC3AAE02A0A1F4D5C665874FD6 /* SoftdeviceBootloaderInfo.swift */,
+				8F0699121352934F4D637F89D2F585AC /* ZipArchive.swift */,
+				0FBDEF70C818F1D4C9333AD1346A283D /* Support Files */,
+			);
+			name = iOSDFULibrary;
+			path = iOSDFULibrary;
+			sourceTree = "<group>";
+		};
+		7F8AEC2100E4BDB863543AD80B467969 /* Pods-LebooSmartSDK_Example */ = {
+			isa = PBXGroup;
+			children = (
+				2C27430995B4B5AB4D0656BBC64B4DE3 /* Pods-LebooSmartSDK_Example.modulemap */,
+				C07BA9F28F9BAA25CE70397CB249D5C4 /* Pods-LebooSmartSDK_Example-acknowledgements.markdown */,
+				CB856913A4F6DDF01271ACDC663B48CD /* Pods-LebooSmartSDK_Example-acknowledgements.plist */,
+				9274CE6C735C5F61FFAEEDDDE91E1087 /* Pods-LebooSmartSDK_Example-dummy.m */,
+				95EF5FE72113E841518EACFA40D8D9EC /* Pods-LebooSmartSDK_Example-frameworks.sh */,
+				C2CB8218D4227E2CC67C073BAB2293E2 /* Pods-LebooSmartSDK_Example-Info.plist */,
+				D225543909904ACD566F949FDEE4E988 /* Pods-LebooSmartSDK_Example-umbrella.h */,
+				AC9B1723CB4B1A5EC3C1AB0DDAA48E17 /* Pods-LebooSmartSDK_Example.debug.xcconfig */,
+				4B9D96E276653E8FDF8E5DEB02C8C605 /* Pods-LebooSmartSDK_Example.release.xcconfig */,
+			);
+			name = "Pods-LebooSmartSDK_Example";
+			path = "Target Support Files/Pods-LebooSmartSDK_Example";
+			sourceTree = "<group>";
+		};
+		81D698B93B26F61A0A3374FC45020FA8 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				21D95460412CBDDED6750AADBB2880FB /* LebooSmartSDK.podspec */,
+				9B54B23EB18D14B2D7A9161AED8CFD93 /* LICENSE */,
+				17CCC5BD95FCFF264818AE2595EC53B0 /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D84E1C4DC7E7C2FDDE552B6A98C754C3 /* Development Pods */,
+				4D2C317CDF1358FACFD3573E196A71C8 /* Frameworks */,
+				59E738FC7D63EC9A76576C71648BC3FB /* Pods */,
+				D1BE14D4F1C7E70383A3409E5A4C1D41 /* Products */,
+				499235AEC1A6C699F1E9F804EE867D8D /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D1BE14D4F1C7E70383A3409E5A4C1D41 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				21B1375088A0310C7AE2BE4C8188D12F /* iOSDFULibrary.framework */,
+				8EA3835FF6BD9ED1C9959945A5238B06 /* LebooSmartSDK.framework */,
+				7C7B1C30CD437D9771584476E2083B63 /* Pods_LebooSmartSDK_Example.framework */,
+				C46E5A85D0A19EE185221844A545FA54 /* Pods_LebooSmartSDK_Tests.framework */,
+				48A4A6EDC08C8AC933D0DCD507E9D173 /* ZIPFoundation.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D84E1C4DC7E7C2FDDE552B6A98C754C3 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3E1A7B577EA89F3FA49611499DC43A73 /* LebooSmartSDK */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		ECDEC86CE3A4D2869075DAE77BD95A5B /* ZIPFoundation */ = {
+			isa = PBXGroup;
+			children = (
+				13F44E8B15EEBA878BB0F08BF56DC502 /* Archive.swift */,
+				CB0161779F3F2D4011783C4306248DB4 /* Archive+MemoryFile.swift */,
+				5A0DCF07B55C71344CF60B9B7A5FEA06 /* Archive+Reading.swift */,
+				6D4540759C2E29E0A99BD50D491BC193 /* Archive+Writing.swift */,
+				796DB5DB9A54612B77EB70C0E65B5695 /* Data+Compression.swift */,
+				AAAEB4849E9EDE800BC35C203C428025 /* Data+Serialization.swift */,
+				A645AD50213B40884C108C8803BC6B3A /* Entry.swift */,
+				8749DBBEAB66D4B576FADAC88CDE5967 /* FileManager+ZIP.swift */,
+				2C010ECA9C6A25A358EAD6567745F671 /* Support Files */,
+			);
+			name = ZIPFoundation;
+			path = ZIPFoundation;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		0B1118FEEB4E4D3DDCED9A370EC30485 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				028DBF15B28DF38232A764D2C50AADDC /* iOSDFULibrary-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F48D73475E9038F308C034EE389E3A8 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B97B4A1EDB297E527D7E96046614C287 /* ZIPFoundation-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		991FB4508C3C7831870DB9036DBBC1F0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A3E9887B821C587208583139CC33D6B0 /* Pods-LebooSmartSDK_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C69F2184809F62582EF761B5E036B538 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2FACA228E9DEA3AFBEA412966D5FD9F5 /* Pods-LebooSmartSDK_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC7A840EF8C2C6D320FE3A49F229FE6B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8FD25A241EBF253F4CFFF77A885B794C /* LebooSmartSDK-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		0B34ACAFD9257DF6D167ABB33506FC84 /* LebooSmartSDK */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C1C3C224B446FA0E8614F67A5F13A8BC /* Build configuration list for PBXNativeTarget "LebooSmartSDK" */;
+			buildPhases = (
+				DC7A840EF8C2C6D320FE3A49F229FE6B /* Headers */,
+				C1A3708BA5FF7CD836EEA50F3939206D /* Sources */,
+				1F643EA63282B193D283F4A6490E1B42 /* Frameworks */,
+				BC6970D77A9422E50FE03A9A1865FA10 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D36696108AFD716D969DCD5DEC885BF0 /* PBXTargetDependency */,
+			);
+			name = LebooSmartSDK;
+			productName = LebooSmartSDK;
+			productReference = 8EA3835FF6BD9ED1C9959945A5238B06 /* LebooSmartSDK.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		241F691457E41D69E8601C1C97970602 /* Pods-LebooSmartSDK_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A64FBAA1B80C8F8E8387520AEC07C51E /* Build configuration list for PBXNativeTarget "Pods-LebooSmartSDK_Tests" */;
+			buildPhases = (
+				C69F2184809F62582EF761B5E036B538 /* Headers */,
+				8BE0FE3CE442688B4E4263A92C14B579 /* Sources */,
+				C781FC8B3702F1A482A9211A9709FB27 /* Frameworks */,
+				A1EF0F74CE61244521815E2253A2790D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AD7635CAD89CD30C0C8D673A219E2D3F /* PBXTargetDependency */,
+			);
+			name = "Pods-LebooSmartSDK_Tests";
+			productName = "Pods-LebooSmartSDK_Tests";
+			productReference = C46E5A85D0A19EE185221844A545FA54 /* Pods_LebooSmartSDK_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		30A69432D6A2F9F7BFF453B257263062 /* Pods-LebooSmartSDK_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ABE244EF7ECB0211A7FAE031B59C5A8B /* Build configuration list for PBXNativeTarget "Pods-LebooSmartSDK_Example" */;
+			buildPhases = (
+				991FB4508C3C7831870DB9036DBBC1F0 /* Headers */,
+				7D7C5446C2D057046A123A3F7A6FABAE /* Sources */,
+				EC10029A89AEA29D8597513A135CF6D8 /* Frameworks */,
+				57BE939692A3445505B05A0D2E9E2939 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CF6FCAFA1EF99C72817E4BC141C1BF92 /* PBXTargetDependency */,
+				D61FE9C83DC3C6D68F5847656290815E /* PBXTargetDependency */,
+				64207BB84D08314944489EFA11C68D53 /* PBXTargetDependency */,
+			);
+			name = "Pods-LebooSmartSDK_Example";
+			productName = "Pods-LebooSmartSDK_Example";
+			productReference = 7C7B1C30CD437D9771584476E2083B63 /* Pods_LebooSmartSDK_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		9506C7FCDAE6E6967A99655F452EEE93 /* iOSDFULibrary */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ABF25C1E485C8577B3584A341BA77A5F /* Build configuration list for PBXNativeTarget "iOSDFULibrary" */;
+			buildPhases = (
+				0B1118FEEB4E4D3DDCED9A370EC30485 /* Headers */,
+				361B3D535DC5A8C2D61A54B3C69B6292 /* Sources */,
+				71245F74FC92DF3982E2DB39C85A01E3 /* Frameworks */,
+				200A661906746065442230A25BCD8CA4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				27C15B01D888770812A277F566E72930 /* PBXTargetDependency */,
+			);
+			name = iOSDFULibrary;
+			productName = iOSDFULibrary;
+			productReference = 21B1375088A0310C7AE2BE4C8188D12F /* iOSDFULibrary.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		AA15C8469D67684160CC2A7098EB841C /* ZIPFoundation */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD6A5C05181051CA125C1B5E9E093577 /* Build configuration list for PBXNativeTarget "ZIPFoundation" */;
+			buildPhases = (
+				3F48D73475E9038F308C034EE389E3A8 /* Headers */,
+				D81D65E1CDC8A171941F2EB561268C1E /* Sources */,
+				0FA5895136F4B505235FAC3FE53BE1D4 /* Frameworks */,
+				7FE6C5CB9B15EFA0DD0FDAFB425C0835 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ZIPFoundation;
+			productName = ZIPFoundation;
+			productReference = 48A4A6EDC08C8AC933D0DCD507E9D173 /* ZIPFoundation.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = D1BE14D4F1C7E70383A3409E5A4C1D41 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9506C7FCDAE6E6967A99655F452EEE93 /* iOSDFULibrary */,
+				0B34ACAFD9257DF6D167ABB33506FC84 /* LebooSmartSDK */,
+				30A69432D6A2F9F7BFF453B257263062 /* Pods-LebooSmartSDK_Example */,
+				241F691457E41D69E8601C1C97970602 /* Pods-LebooSmartSDK_Tests */,
+				AA15C8469D67684160CC2A7098EB841C /* ZIPFoundation */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		200A661906746065442230A25BCD8CA4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		57BE939692A3445505B05A0D2E9E2939 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7FE6C5CB9B15EFA0DD0FDAFB425C0835 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1EF0F74CE61244521815E2253A2790D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC6970D77A9422E50FE03A9A1865FA10 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		361B3D535DC5A8C2D61A54B3C69B6292 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9BDF143CBE288A6B4B307EC8DD91835C /* ButtonlessDFU.swift in Sources */,
+				9D50824E00EAD610A593898FD570071A /* crc32.swift in Sources */,
+				BD5FCAC1CAC5F206A32F806F5E9EE256 /* Data.swift in Sources */,
+				D1BA4CF864F8020F1C0D7C3A64FCF746 /* DFUCharacteristic.swift in Sources */,
+				3CB1EB4DA1ABDBC666D2A5470EDE3B37 /* DFUController.swift in Sources */,
+				4C97C85D656D97F6527435A0423B9D83 /* DFUControlPoint.swift in Sources */,
+				64CEE1C5702CA1AD82239C0719A2E536 /* DFUExecutor.swift in Sources */,
+				4B13A1A3AA68450DA9C8C2CA77C7FD4C /* DFUFirmware.swift in Sources */,
+				EF5E0918E675308789D4BBCD5D18EB40 /* DFUPacket.swift in Sources */,
+				5CE4342B6C73053AB2589A40A4400AA9 /* DFUPeripheral.swift in Sources */,
+				8E576FFAB618E656BD64A60CEDA49F4F /* DFUPeripheralDelegate.swift in Sources */,
+				82BD415AD8CC4E9F77B668976953C448 /* DFUPeripheralSelector.swift in Sources */,
+				C639BE3D6DB21D9736007CAAB79B8623 /* DFUPeripheralSelectorDelegate.swift in Sources */,
+				F31151D69E7B47350103FB3A43F3F99B /* DFUService.swift in Sources */,
+				92D83BE44CA6ACD82DF08827DA34640F /* DFUServiceController.swift in Sources */,
+				1D582E970522643F5303DF13638BC69B /* DFUServiceDelegate.swift in Sources */,
+				5A63909A5FEF158E3F22AA89946FE837 /* DFUServiceInitiator.swift in Sources */,
+				1E7553CD3A6F38A4BCB6A5DE36FB2E1F /* DFUServiceSelector.swift in Sources */,
+				6D43001EAB42CBB04E78AD112DC64D1E /* DFUStarterPeripheral.swift in Sources */,
+				67B645EC54DD1A23B7C9D0F045584CAC /* DFUStream.swift in Sources */,
+				6E4DA7A5AFC4C02C5F0132A885A6E5A3 /* DFUStreamBin.swift in Sources */,
+				76447E56F426A5DCE3A1F56D2F7434B6 /* DFUStreamHex.swift in Sources */,
+				A7071CC186838C1947986E2EABDEF905 /* DFUStreamZip.swift in Sources */,
+				57E9E5D6F5E88FE089B1CC1E31AE327A /* DFUUuidHelper.swift in Sources */,
+				62D3BC9AA11587840B7E77123D3CFCD6 /* DFUVersion.swift in Sources */,
+				5F80E6BA2F5B4BCA0EE31159D9830CE6 /* Double.swift in Sources */,
+				30C0E220EDBAB63E4726CEF54C18AC12 /* IntelHex2BinConverter.swift in Sources */,
+				45AE5D5BF8F9EFABA0EF43391D909B46 /* iOSDFULibrary-dummy.m in Sources */,
+				FE940323C8D995D7186111FF285F6047 /* LegacyDFUExecutor.swift in Sources */,
+				BDF8767F2632771A98948BFFF13F0E04 /* LegacyDFUPeripheral.swift in Sources */,
+				EAEAEA8E1B36EEC9177BA41690057EBF /* LegacyDFUPeripheralDelegate.swift in Sources */,
+				C73638478B40EC7B84CD3490FBD35C81 /* LegacyDFUService.swift in Sources */,
+				CEFF67D23A2812637BC4F0C4B67AF91B /* LegacyDFUServiceInitiator.swift in Sources */,
+				A3EE0BD5814AC1DF1ACB7ED137B61AD9 /* LoggerDelegate.swift in Sources */,
+				35F0EAC5F2A8877A93EBC3C09E07BF33 /* LoggerHelper.swift in Sources */,
+				E59ED4F333DB81E371C435DD6023C8A4 /* Manifest.swift in Sources */,
+				B1A877DDEA7455BAF303606F479F9BA1 /* ManifestFirmwareInfo.swift in Sources */,
+				C811E49F78FB3960C2DFC0EC83FB1BED /* SecureDFUControlPoint.swift in Sources */,
+				F3A575D47A41C801EECA43C085F53BC6 /* SecureDFUExecutor.swift in Sources */,
+				A1D8D9F427A072B371139E5FE8E7B496 /* SecureDFUPacket.swift in Sources */,
+				CD8AFA73ECC5FED9B526CFCD87D6F266 /* SecureDFUPeripheral.swift in Sources */,
+				584FF35B36C2197F758C31AC429D44A3 /* SecureDFUPeripheralDelegate.swift in Sources */,
+				C94152095F00B8D86B77491D12B7069A /* SecureDFUService.swift in Sources */,
+				1959BC6ED6580F889436CD769EB49AB7 /* SecureDFUServiceInitiator.swift in Sources */,
+				60A7035999E33A401ED70E1895AF014F /* SoftdeviceBootloaderInfo.swift in Sources */,
+				03A0E00BECEE99680AF1AACACDE9CFE3 /* ZipArchive.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7D7C5446C2D057046A123A3F7A6FABAE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C44BFDC77143E167EA29419DD90B72F /* Pods-LebooSmartSDK_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8BE0FE3CE442688B4E4263A92C14B579 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB44BF450DAC25865C21701299803650 /* Pods-LebooSmartSDK_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C1A3708BA5FF7CD836EEA50F3939206D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3673EE018255A553230E0F6E97FE6158 /* LebooSmartSDK-dummy.m in Sources */,
+				656CE4A9498A775D04E9F0D10BB1967C /* ReplaceMe.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D81D65E1CDC8A171941F2EB561268C1E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40B8AEED2B2E12C5DC758554639A5A20 /* Archive+MemoryFile.swift in Sources */,
+				6C18E75620218AB0CC01FBDF6F5BC905 /* Archive+Reading.swift in Sources */,
+				F89B49496E5BA6C4605C4BC666AD3E4D /* Archive+Writing.swift in Sources */,
+				3DE2DEDAAAB43399BD6472AE97CE4551 /* Archive.swift in Sources */,
+				52153C7CD5461F1FFAD3A4E88CFB0B1A /* Data+Compression.swift in Sources */,
+				E3671AD4AE39FC993D6E63EB8D20484D /* Data+Serialization.swift in Sources */,
+				A5B7F409748CEA21E2D543B3C6172253 /* Entry.swift in Sources */,
+				F86A8CD824EB099CF06935A088F62BC5 /* FileManager+ZIP.swift in Sources */,
+				D5750175FCDBFB4A23C37549B06FC00B /* ZIPFoundation-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		27C15B01D888770812A277F566E72930 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ZIPFoundation;
+			target = AA15C8469D67684160CC2A7098EB841C /* ZIPFoundation */;
+			targetProxy = 367187ECB36CADA5A86AA34C1FFB5856 /* PBXContainerItemProxy */;
+		};
+		64207BB84D08314944489EFA11C68D53 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = iOSDFULibrary;
+			target = 9506C7FCDAE6E6967A99655F452EEE93 /* iOSDFULibrary */;
+			targetProxy = DA7BA4BCE85A45556EC8A801176A351A /* PBXContainerItemProxy */;
+		};
+		AD7635CAD89CD30C0C8D673A219E2D3F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-LebooSmartSDK_Example";
+			target = 30A69432D6A2F9F7BFF453B257263062 /* Pods-LebooSmartSDK_Example */;
+			targetProxy = 642FDF31E3D0D92EF3A954CD77D0057F /* PBXContainerItemProxy */;
+		};
+		CF6FCAFA1EF99C72817E4BC141C1BF92 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = LebooSmartSDK;
+			target = 0B34ACAFD9257DF6D167ABB33506FC84 /* LebooSmartSDK */;
+			targetProxy = 41E46D1E7C2DE8F0B9EF655D5D2A4A2A /* PBXContainerItemProxy */;
+		};
+		D36696108AFD716D969DCD5DEC885BF0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = iOSDFULibrary;
+			target = 9506C7FCDAE6E6967A99655F452EEE93 /* iOSDFULibrary */;
+			targetProxy = A50D6E3967CBFA3C8508A7FB56A8CE12 /* PBXContainerItemProxy */;
+		};
+		D61FE9C83DC3C6D68F5847656290815E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ZIPFoundation;
+			target = AA15C8469D67684160CC2A7098EB841C /* ZIPFoundation */;
+			targetProxy = 5FF05EF8A91B890C9DAE4316FE3C63D7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1B2CBD3B23E83BBA570D129EA321E6DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AC9B1723CB4B1A5EC3C1AB0DDAA48E17 /* Pods-LebooSmartSDK_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-LebooSmartSDK_Example/Pods-LebooSmartSDK_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-LebooSmartSDK_Example/Pods-LebooSmartSDK_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		25AD9454612BF454A1E3DC4CD4FA8C6D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		3EE002AB30E186FA41BD4EB3C7414D5F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 273E70460A6D98B2B701F2865556CB13 /* iOSDFULibrary.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/iOSDFULibrary/iOSDFULibrary-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/iOSDFULibrary/iOSDFULibrary-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/iOSDFULibrary/iOSDFULibrary.modulemap";
+				PRODUCT_MODULE_NAME = iOSDFULibrary;
+				PRODUCT_NAME = iOSDFULibrary;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.5;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		82E9A9EFC1E3418B8B1E8629A0889ADF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AFC1C50F433B2FA9A5D5C86B9A6A0EE8 /* ZIPFoundation.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ZIPFoundation/ZIPFoundation-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ZIPFoundation/ZIPFoundation-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ZIPFoundation/ZIPFoundation.modulemap";
+				PRODUCT_MODULE_NAME = ZIPFoundation;
+				PRODUCT_NAME = ZIPFoundation;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8456AC634945986D7835537F86BE42C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4CFF021F902926892285EFAA2CBC2EB7 /* LebooSmartSDK.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/LebooSmartSDK/LebooSmartSDK-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/LebooSmartSDK/LebooSmartSDK-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/LebooSmartSDK/LebooSmartSDK.modulemap";
+				PRODUCT_MODULE_NAME = LebooSmartSDK;
+				PRODUCT_NAME = LebooSmartSDK;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		967B6D438FDB255CA5D6206D321C1DFC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D9BE03A8C426E5F0AB15594235413703 /* Pods-LebooSmartSDK_Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-LebooSmartSDK_Tests/Pods-LebooSmartSDK_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-LebooSmartSDK_Tests/Pods-LebooSmartSDK_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		9D9B29E9C62400BAD098786B7D795A50 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ACBC6FB2F127684D109F966D4CF96406 /* Pods-LebooSmartSDK_Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-LebooSmartSDK_Tests/Pods-LebooSmartSDK_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-LebooSmartSDK_Tests/Pods-LebooSmartSDK_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		CA4B69C7F9115D1B8374DC554A44588A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4B9D96E276653E8FDF8E5DEB02C8C605 /* Pods-LebooSmartSDK_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-LebooSmartSDK_Example/Pods-LebooSmartSDK_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-LebooSmartSDK_Example/Pods-LebooSmartSDK_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		CA547D2C7E9A8A153DC2B27FBE00B112 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		D585FAF3455016CC2466B85922E99A60 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2A7F904AB9C8B1A71904D10D8F1A6151 /* ZIPFoundation.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ZIPFoundation/ZIPFoundation-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ZIPFoundation/ZIPFoundation-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ZIPFoundation/ZIPFoundation.modulemap";
+				PRODUCT_MODULE_NAME = ZIPFoundation;
+				PRODUCT_NAME = ZIPFoundation;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E2AC78CE70BD1CFA1C850D8783EBB089 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0AC11FC45B3850FBE02BC65650F011E8 /* LebooSmartSDK.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/LebooSmartSDK/LebooSmartSDK-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/LebooSmartSDK/LebooSmartSDK-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/LebooSmartSDK/LebooSmartSDK.modulemap";
+				PRODUCT_MODULE_NAME = LebooSmartSDK;
+				PRODUCT_NAME = LebooSmartSDK;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		FB1D540754C6248CDF55595C154A87FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1C18E37643727848F37256147E9AD151 /* iOSDFULibrary.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/iOSDFULibrary/iOSDFULibrary-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/iOSDFULibrary/iOSDFULibrary-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/iOSDFULibrary/iOSDFULibrary.modulemap";
+				PRODUCT_MODULE_NAME = iOSDFULibrary;
+				PRODUCT_NAME = iOSDFULibrary;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.5;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				25AD9454612BF454A1E3DC4CD4FA8C6D /* Debug */,
+				CA547D2C7E9A8A153DC2B27FBE00B112 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A64FBAA1B80C8F8E8387520AEC07C51E /* Build configuration list for PBXNativeTarget "Pods-LebooSmartSDK_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9D9B29E9C62400BAD098786B7D795A50 /* Debug */,
+				967B6D438FDB255CA5D6206D321C1DFC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ABE244EF7ECB0211A7FAE031B59C5A8B /* Build configuration list for PBXNativeTarget "Pods-LebooSmartSDK_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1B2CBD3B23E83BBA570D129EA321E6DA /* Debug */,
+				CA4B69C7F9115D1B8374DC554A44588A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ABF25C1E485C8577B3584A341BA77A5F /* Build configuration list for PBXNativeTarget "iOSDFULibrary" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB1D540754C6248CDF55595C154A87FB /* Debug */,
+				3EE002AB30E186FA41BD4EB3C7414D5F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C1C3C224B446FA0E8614F67A5F13A8BC /* Build configuration list for PBXNativeTarget "LebooSmartSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E2AC78CE70BD1CFA1C850D8783EBB089 /* Debug */,
+				8456AC634945986D7835537F86BE42C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CD6A5C05181051CA125C1B5E9E093577 /* Build configuration list for PBXNativeTarget "ZIPFoundation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D585FAF3455016CC2466B85922E99A60 /* Debug */,
+				82E9A9EFC1E3418B8B1E8629A0889ADF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

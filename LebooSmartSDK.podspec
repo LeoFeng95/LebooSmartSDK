@@ -8,8 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = 'LebooSmartSDK'
-  s.version          = '0.1.0'
-  s.summary          = 'A short description of LebooSmartSDK.'
+  s.version          = '1.0.0'
+  s.summary          = '智能牙刷'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,25 +18,31 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+  智能亚述SDK
                        DESC
 
   s.homepage         = 'https://github.com/LeoFeng95/LebooSmartSDK'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'LeoFeng95' => 'fenglei@lebondsonic.com' }
+  s.author           = { 'LeoFeng' => 'fenglei@lebondsonic.com' }
   s.source           = { :git => 'https://github.com/LeoFeng95/LebooSmartSDK.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '9.0'
+  s.ios.deployment_target = '10.0'
 
   s.source_files = 'LebooSmartSDK/Classes/**/*'
   
+  s.static_framework  =  true
+  s.xcconfig = {'OTHER_LDFLAGS' => '-ObjC'}
+  # 依赖第三方
+  s.dependency 'iOSDFULibrary'
+  # 系统动态库(多个)
+  s.frameworks = 'CoreBluetooth','Foundation'
+  s.public_header_files = 'Pod/Classes/**/*.h'
   # s.resource_bundles = {
   #   'LebooSmartSDK' => ['LebooSmartSDK/Assets/*.png']
   # }
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
 end

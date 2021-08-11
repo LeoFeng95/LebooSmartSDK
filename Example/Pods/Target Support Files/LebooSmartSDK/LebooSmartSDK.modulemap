@@ -1,0 +1,6 @@
+framework module LebooSmartSDK {
+  umbrella header "LebooSmartSDK-umbrella.h"
+
+  export *
+  module * { export * }
+}

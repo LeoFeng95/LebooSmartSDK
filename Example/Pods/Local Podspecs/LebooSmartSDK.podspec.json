@@ -1,0 +1,35 @@
+{
+  "name": "LebooSmartSDK",
+  "version": "1.0.0",
+  "summary": "智能牙刷",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/LeoFeng95/LebooSmartSDK",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "LeoFeng": "fenglei@lebondsonic.com"
+  },
+  "source": {
+    "git": "https://github.com/LeoFeng95/LebooSmartSDK.git",
+    "tag": "1.0.0"
+  },
+  "platforms": {
+    "ios": "10.0"
+  },
+  "source_files": "LebooSmartSDK/Classes/**/*",
+  "static_framework": true,
+  "xcconfig": {
+    "OTHER_LDFLAGS": "-ObjC"
+  },
+  "dependencies": {
+    "iOSDFULibrary": [
+
+    ]
+  },
+  "frameworks": [
+    "CoreBluetooth",
+    "Foundation"
+  ]
+}

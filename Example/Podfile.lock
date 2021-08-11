@@ -1,0 +1,27 @@
+PODS:
+  - iOSDFULibrary (4.11.0):
+    - ZIPFoundation (= 0.9.11)
+  - LebooSmartSDK (1.0.0):
+    - iOSDFULibrary
+  - ZIPFoundation (0.9.11)
+
+DEPENDENCIES:
+  - LebooSmartSDK (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - iOSDFULibrary
+    - ZIPFoundation
+
+EXTERNAL SOURCES:
+  LebooSmartSDK:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  iOSDFULibrary: ca2a4da1f1680fe4957b0a33ad605c9e10f7ae7c
+  LebooSmartSDK: 8ee30342c35cfa60aca4d4b68865c19e0272ae24
+  ZIPFoundation: b1f0de4eed33e74a676f76e12559ab6b75990197
+
+PODFILE CHECKSUM: 52eb6b1124178946003c97617118edd8e38c3fb4
+
+COCOAPODS: 1.10.1
