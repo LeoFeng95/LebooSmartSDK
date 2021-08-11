@@ -9,7 +9,7 @@
 #import "LebooBLEDecoder.h"
 #import "LebooSmartSDK.h"
 #import "LebooInteractiveManager.h"
-
+#import <LebooSmartSDK/LebooSDKConst.h>
 @interface LebooBLEManager ()
 <CBCentralManagerDelegate,
 CBPeripheralDelegate>

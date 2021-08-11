@@ -7,7 +7,7 @@
 
 #import <Foundation/Foundation.h>
 #import "LebooConnectManager.h"
-
+@class CBCentralManager, CBPeripheral;
 
 
 

@@ -38,7 +38,7 @@ Pod::Spec.new do |s|
   s.dependency 'iOSDFULibrary'
   # 系统动态库(多个)
   s.frameworks = 'CoreBluetooth','Foundation'
-  s.public_header_files = 'Pod/Classes/**/*.h'
+  s.public_header_files = 'Pod/Classes/**/**/*.h'
   # s.resource_bundles = {
   #   'LebooSmartSDK' => ['LebooSmartSDK/Assets/*.png']
   # }

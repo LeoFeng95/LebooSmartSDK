@@ -8,11 +8,6 @@
 #ifndef LebooEnums_h
 #define LebooEnums_h
 
-
-
-
-
-
 typedef NS_ENUM(NSInteger, LebooBrushTime) {
     ///120秒
     LebooBrushTime_120,

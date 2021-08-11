@@ -2,7 +2,7 @@
   "name": "LebooSmartSDK",
   "version": "1.0.0",
   "summary": "智能牙刷",
-  "description": "TODO: Add long description of the pod here.",
+  "description": "智能亚述SDK",
   "homepage": "https://github.com/LeoFeng95/LebooSmartSDK",
   "license": {
     "type": "MIT",
@@ -31,5 +31,6 @@
   "frameworks": [
     "CoreBluetooth",
     "Foundation"
-  ]
+  ],
+  "public_header_files": "Pod/Classes/**/**/*.h"
 }

@@ -6,7 +6,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <LebooSDK/LebooEnums.h>
+#import <LebooSmartSDK/LebooEnums.h>
 
 
 typedef void (^LebooArgsBlock)(id obj);

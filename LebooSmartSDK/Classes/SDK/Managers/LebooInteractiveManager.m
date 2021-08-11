@@ -9,6 +9,8 @@
 #import "LebooBLEManager.h"
 #import "LebooSmartSDK.h"
 #import "LebooBLEDecoder.h"
+#import <LebooSmartSDK/LebooLog.h>
+#import <LebooSmartSDK/NSData+transform.h>
 
 
 NSString *kBindResultKey = @"command_02";
